@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://defectuoso.github.io/homelab/how_to_doc/">
+      
       
         <link rel="prev" href="..">
       
@@ -21,11 +23,14 @@
     
     
       
-        <title>Setting up docs - homelabbing</title>
+        <title>How this doc is built - homelabbing</title>
       
     
     
       <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -39,10 +44,12 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../stylesheets/colors.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -53,13 +60,25 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="flexoki-dark" data-md-color-primary="custom" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#how-this-doc-is-built" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -93,12 +112,24 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Setting up docs
+              How this doc is built
             
           </span>
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="flexoki-dark" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -196,7 +227,7 @@
   <span class="md-ellipsis">
     
   
-    Welcome to MkDocs
+    Index
   
 
     
@@ -222,6 +253,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How this doc is built
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -230,7 +281,7 @@
   <span class="md-ellipsis">
     
   
-    Setting up docs
+    How this doc is built
   
 
     
@@ -239,6 +290,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#obsidian-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obsidian integration
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -261,6 +342,27 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#obsidian-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Obsidian integration
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -277,20 +379,15 @@
 
 
 
-  <h1>Setting up docs</h1>
-
-<pre><code class="language-bash">mkdir homelab
-cd homelab
-
-git init
-
-uv venv
-uv pip install mkdocs mkdocs-material
-# activate venv
-mkdocs --version # requires to be in the venv
-</code></pre>
-<p>Two different git branches exist: the <code>master</code>, and a <code>gh-pages</code> which only contains the static files (compiled HTML, CSS, JS) that Pages serve. They're independent, coexist, with no file sharing unless merged.</p>
-<p>Note: how branches work. Each branch is a different version of the repo. With branch changes, git replaces files in the working directory to match the branch. This means files are added or removed automatically, pulled from the internal database.</p>
+<h1 id="how-this-doc-is-built">How this doc is built</h1>
+<p>Documentation is written using <code>mkdocs</code> and <code>mkdocs-material</code>; the site can be served with <code>mkdocs serve</code>, with the Python env synced. All documentation is written in a separate git branch <code>gh-pages</code>, which allows for static serving using GitHub Pages.</p>
+<details class="question">
+<summary>How do git branches work?</summary>
+<p>Each branch is a different version of the repo. With branch changes, git replaces files in the working directory to match the branch. This means files are added or removed automatically, pulled from the internal database.</p>
+</details>
+<p>mkdocs can <a href="https://www.mkdocs.org/user-guide/deploying-your-docs/">automatically compile and push to Pages</a>. The <code>docs/</code> dir and <code>mkdocs.yml</code> lives in the <code>master</code> source branch, and the <code>mkdocs gh-deploy</code> command builds and commits to the <code>gh-pages</code> branch of GitHub.</p>
+<h2 id="obsidian-integration">Obsidian integration</h2>
+<p>Using tags and a script, automatically sync notes between repos.</p>
 
 
 

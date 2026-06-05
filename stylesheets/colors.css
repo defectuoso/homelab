@@ -1,0 +1,60 @@
+[data-md-color-scheme="flexoki-dark"] {
+
+  color-scheme: dark;
+
+  /* Base */
+  --md-default-bg-color:          #100F0F; /* black  — bg   */
+  --md-default-bg-color--light:   #1C1B1A; /* 950    — bg-2 */
+  --md-default-bg-color--lighter: #282726; /* 900    — ui   */
+  --md-default-bg-color--lightest:#343331; /* 850    — ui-2 */
+
+  --md-default-fg-color:          #CECDC3; /* 200    — tx   */
+  --md-default-fg-color--light:   #878580; /* 500    — tx-2 */
+  --md-default-fg-color--lighter: #575653; /* 700    — tx-3 */
+  --md-default-fg-color--lightest:#403E3C; /* 800    — ui-3, dividers */
+
+  --md-typeset-color: #CECDC3;
+
+  /* Header (primary) — using blue-400 (dark mode uses 400 values) */
+  --md-primary-fg-color:          #1C1B1A; /* bg-2, so header blends with bg */
+  --md-primary-fg-color--light:   #282726;
+  --md-primary-fg-color--dark:    #100F0F;
+  --md-primary-bg-color:          #CECDC3; /* tx — text on header */
+  --md-primary-bg-color--light:   rgba(206, 205, 195, 0.7);
+
+  /* Accent / interactive — cyan-400 */
+  --md-accent-fg-color:               #3AA99F;
+  --md-accent-fg-color--transparent:  rgba(58, 169, 159, 0.1);
+  --md-accent-bg-color:               #100F0F;
+
+  /* Links in content */
+  --md-typeset-a-color: #3AA99F;
+
+  /* Code blocks — slightly elevated from bg */
+  --md-code-bg-color: #1C1B1A; /* bg-2 */
+  --md-code-fg-color: #CECDC3; /* tx   */
+
+  /* Syntax highlighting — dark uses 400 values */
+  --md-code-hl-comment-color:     #575653; /* tx-3   — comments */
+  --md-code-hl-punctuation-color: #878580; /* tx-2   — punctuation, operators */
+  --md-code-hl-keyword-color:     #879A39; /* gr-400  — keywords */
+  --md-code-hl-string-color:      #3AA99F; /* cy-400  — strings */
+  --md-code-hl-function-color:    #DA702C; /* or-400  — functions */
+  --md-code-hl-constant-color:    #D0A215; /* ye-400  — constants */
+  --md-code-hl-number-color:      #8B7EC8; /* pu-400  — numbers */
+  --md-code-hl-variable-color:    #4385BE; /* bl-400  — variables, attributes */
+  --md-code-hl-operator-color:    #878580; /* tx-2    — operators */
+  --md-code-hl-name-color:        #CECDC3; /* tx      — identifiers */
+  --md-code-hl-special-color:     #CE5D97; /* ma-400  — language features */
+
+  /* Admonitions */
+  --md-admonition-bg-color:       #1C1B1A;
+  --md-admonition-fg-color:         #CECDC3
+
+  /* Footer */
+  --md-footer-bg-color:           #1C1B1A; /* bg-2 */
+  --md-footer-bg-color--dark:     #100F0F;
+  --md-footer-fg-color:           #CECDC3;
+  --md-footer-fg-color--light:    #878580;
+  --md-footer-fg-color--lighter:  #575653;
+}
