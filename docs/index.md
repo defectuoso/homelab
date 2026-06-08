@@ -1,17 +1,17 @@
-# Welcome to MkDocs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Index
 
-## Commands
+This site offers an unified entry point for documentation and notes taken during a homelab setup.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Why this documentation
 
-## Project layout
+- Documentation and logging, showcase, rebuild.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Services
+
+- Storage layer + Backup
+- Media streaming
+- Photo library
+- Minecraft server
+- Pi-hole
+- System monitoring and management + Security

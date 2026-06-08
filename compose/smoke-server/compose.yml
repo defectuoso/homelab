@@ -1,0 +1,30 @@
+services:
+  mc:
+    image: itzg/minecraft-server:java21    # pin to Java runtime version; MC version is set via env
+    container_name: minecraft
+    tty: true                              # required: keeps the Minecraft console interactive
+    stdin_open: true                       # required: pair with tty for console input
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:25565:25565"           # localhost only; playit-agent will forward externally
+    volumes:
+      - ./data:/data                       # bind mount: world + configs you'll need to touch
+    env_file:
+      - .env
+    environment:
+      EULA: "TRUE"
+      TYPE: "MODRINTH"
+      MODRINTH_MODPACK: "essentially-optimized-server:D2dYG22N"   # slug from the Modrinth URL
+      VERSION: "1.21.11"                      # pin Minecraft version explicitly
+      MEMORY: "4G"                            # set to ~75% of your available RAM
+
+  playit:
+    image: ghcr.io/playit-cloud/playit-agent:latest   # check their README for exact env vars
+    container_name: minecraft-playit
+    restart: unless-stopped
+    environment:
+      PLAYIT_SECRET: "${PLAYIT_SECRET}"       # from .env; the secret_key from your notes
+    depends_on:
+      - mc
+    # playit reaches the minecraft server via Docker's internal network as "mc:25565"
+    # no host ports needed here; the agent connects outbound to playit's infrastructure

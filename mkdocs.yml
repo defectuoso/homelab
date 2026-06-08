@@ -1,2 +1,19 @@
 site_name: homelabbing
-theme: material
+site_url: https://defectuoso.github.io/homelab/
+
+theme:
+  name: material
+
+  palette:
+    - scheme: flexoki-dark
+      primary: custom
+
+  font:
+    text: Noto Sans
+
+extra_css:
+  - stylesheets/colors.css
+
+markdown_extensions:
+   - admonition
+   - pymdownx.details
