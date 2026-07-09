@@ -1,0 +1,9 @@
+services:
+  samba:
+    image: ghcr.io/servercontainers/samba:smbd-only-latest
+    container_name: samba
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      # por seguridad, con las variables no se muestran nombres
+      - ${PATH_SMB_VOL1_HOST}:${PATH_SMB_VOL1_CONT}:rw

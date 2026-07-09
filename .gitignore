@@ -2,3 +2,5 @@
 site/
 
 .env
+
+journal/

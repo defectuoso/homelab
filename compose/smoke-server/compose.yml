@@ -23,7 +23,7 @@ services:
     container_name: minecraft-playit
     restart: unless-stopped
     environment:
-      PLAYIT_SECRET: "${PLAYIT_SECRET}"       # from .env; the secret_key from your notes
+      SECRET_KEY: "${SECRET_KEY}"       # from .env; the secret_key from your notes
     depends_on:
       - mc
     # playit reaches the minecraft server via Docker's internal network as "mc:25565"

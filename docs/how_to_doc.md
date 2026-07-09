@@ -36,3 +36,5 @@ Report any snapshot, to be able to identify snapshots themselves.
 ```
 
 This reports are the traces we would use to recover the state of the system or the reason behind any change, so ensure all this is in the document at the moment of writing.
+
+Como nota, creo que estos archivos no deberían ser públicos. Los escribo rápido mientras trabajo, es más fácil que se me cuele algo que no debería hacer público. Así puedo controlar más granularmente también qué información se hace pública, de forma más manual. Esto también implica incluirlos en los backups "externos" a git, o encriptarlos en git-crypt.
