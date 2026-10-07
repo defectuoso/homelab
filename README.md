@@ -13,8 +13,6 @@ El homelab consiste de una única máquina de cuatro núcleos de bajo consumo. B
 
 El repositorio es la fuente de verdad. Los cambios se raelizan sobre él, y luego se sincroniza en el servidor. La documentación es parte del trabajo, tanto para terceros como para mí, cuando lo olvide.
 
-El estado actual de la máquina puede comprobarse en [[STATE.md]].
-
 ## Guía de uso
 
 ### Gestión de secretos

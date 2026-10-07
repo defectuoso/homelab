@@ -1,3 +1,8 @@
 .*
 !.gitignore
 !.sops.yaml
+
+compose.override.yaml
+
+
+notes/
