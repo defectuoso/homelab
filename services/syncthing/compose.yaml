@@ -6,6 +6,6 @@ services:
     environment:
       - STGUIADDRESS=0.0.0.0:8384 # empty means defaults to 0.0.0.0:8384
     volumes:
-      - /srv/syncthing/config:/var/syncthing
+      - /srv/services/syncthing/config:/var/syncthing
     network_mode: host
     restart: unless-stopped
