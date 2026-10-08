@@ -2,12 +2,9 @@ services:
   samba:
     image: dockurr/samba:latest
     container_name: samba
-    environment:
-      - NAME=nimbo
-      - USER=samba
-      - PASS=${PASS}
     ports:
       - 445:445
     volumes:
-      - /srv/nimbo:/shared
+      - /srv/services/samba/smb.conf:/etc/samba/smb.conf
+      - /srv/services/samba/users.conf:/etc/samba/users.conf
     restart: unless-stopped

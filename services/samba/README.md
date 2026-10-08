@@ -1,7 +1,9 @@
 
 # Samba
 
-Servidor de ficheros SMB para el share `nimbo` (mi nube personal). En el host, `/srv/nimbo` es el subvolumen del pool de almacenamiento. Se utiliza el contenedor [dockur/samba](https://github.com/dockur/samba): ligero (Alpine) y con una configuración mínima por variables de entorno.
+Servidor de ficheros SMB para los shares `nimbo` (nube personal) y la biblioteca; otros shares pueden ser introducidos por medio del archivo de configuración `smb.conf`, en `/srv/services/samba`, y la gestión de usuarios ocurre por medio del `users.conf` en la misma ubicación. Se utiliza el contenedor [dockur/samba](https://github.com/dockur/samba): ligero (Alpine).
+
+Al igual que con syncthing, los volúmenes de Docker son montados en un `compose.override.yaml` ignorado por git.
 
 Por la configuración del compose, se expone el directorio `/srv/nimbo`. Como [Tailscale](./../tailscale/README.md) corre en modo host, el puerto 445 del host también es alcanzable desde la tailnet, así que el share es accesible desde cualquier sitio:
 
