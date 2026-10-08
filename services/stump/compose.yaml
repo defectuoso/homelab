@@ -1,0 +1,16 @@
+services:
+  stump:
+    image: aaronleopold/stump:latest
+    container_name: stump
+    volumes:
+      - /srv/services/stump:/config
+      - /srv/biblioteca/Books:/data
+    ports:
+      - 10801:10801
+    environment:
+      - PUID=1000
+      - PGID=1000
+      # This `environment` field is optional, remove if you don't need it.
+      # I am using it as an example here, but it's actually a default value.
+      - STUMP_CONFIG_DIR=/config
+    restart: unless-stopped
